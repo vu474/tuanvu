@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuan Vu Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <!--Dùng để chèn các biểu tượng icon vào trang web-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    />
+  </head>
+  <body>
+
+    <!--Tiêu Đề Trang Web-->
+
+      <header class="main-header"> 
+      <div class="logo">
+        <img src="images/01.png" alt="Tuan Vu Store" />
+      </div>
+
+      <!--Thanh tìm kiếm-->
+      <div class="search-bar">
+        <input type="text" placeholder="Bạn đang tìm gì..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="icons">
+        <a href="cuahang.html"><i class="fas fa-map-marker-alt"></i> Cửa hàng</a>
+        <a href="#"id="loginBtn"><i class="fas fa-user"></i> Đăng nhập</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a>
+      </div>
+    </header>
+
+    <!--Đăng Nhập-->
+
+    <div id="loginPopup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+        <p>Nhập email và mật khẩu của bạn:</p>
+        <input type="text" placeholder="Nhập email hoặc số điện thoại">
+        <input type="password" placeholder="Mật khẩu">
+        <button class="login-btn">ĐĂNG NHẬP</button>
+        <div class="popup-footer">
+          <p>Khách hàng mới? <a href="#">Tạo tài koản</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ĐĂNG KÝ -->
+     
+  <div id="registerPopup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+      <p>Điền thông tin để tạo tài khoản mới:</p>
+      <input type="text" placeholder="Họ và tên" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Mật khẩu" />
+      <input type="password" placeholder="Xác nhận mật khẩu" />
+      <button class="register-btn">ĐĂNG KÝ</button>
+      <div class="popup-footer">
+        <p>Đã có tài khoản? <a href="#" id="showLogin">Đăng nhập</a></p>
+      </div>
+    </div>
+   </div>
+  
+    <!-- Menu -->
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="hangmoi.html">HÀNG MỚI</a></li>
+        <li><a href="aonam.html">ÁO NAM</a></li>
+        <li><a href="quannam.html">QUẦN NAM</a></li>
+      </ul>
+    </nav>
+
+    <!--Hình ảnh chạy tự động-->
+
+    <section class="slider">
+      <div class="slide">
+        <img src="images/05.png" />
+      </div>
+      <div class="slide">
+        <img src="images/01.png" />
+      </div>
+      <div class="slide">
+        <img src="images/06.png" />
+      </div>
+      <div class="nav-buttons">
+        <button class="prev">&#10094;</button> 
+        <button class="next">&#10095;</button> 
+      </div>
+    </section>
+
+    <section class="promo-section">
+      <h2>ƯU ĐÃI ĐẠI LỄ 30.04</h2>
+      <div class="promo-scroll">
+        <img src="images/promo1.png" alt="Ữu đãi 1" />
+        <img src="images/promo2.png" alt="Ữu đãi 2" />
+        <img src="images/promo3.png" alt="Ữu đãi 3" />
+        <img src="images/promo4.png" alt="Ữu đãi 4" />
+        <img src="images/promo5.png" alt="Ữu đãi 5" />
+      
+    </section>
+    
+    <section class="promo-banner">
+      <img src ="images/banner.png" alt="Tự Hào Đại Lễ">
+    </section>
+
+    <section class="product-list">
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/product1.png" alt="Sản phẩm 1">
+        
+        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+        <div class="sale-badge">Sale</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+
+        <div class ="info">
+          <h3 class="product-name">Áo Marvel Đen Straight Orgnls Anh Hùng Siêu Cấp</h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+          
+          <div class="sold-info">
+            <p>Đã bán 407 sản phẩm</p>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/product2.png" alt="Sản phẩm 2">
+
+        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+        <div class="sale-badge">Sale</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+
+        <div class ="info">
+          <h3 class="product-name">Áo TankTop ICONDENIM Straight Orgnls Cao Cấp  </h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+
+          <div class="sold-info">
+            <p>Đã bán 308 sản phẩm</p>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/product3.png" alt="Sản phẩm 3">
+
+        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+        <div class="sale-badge">Sale</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+
+        <div class ="info">
+          <h3 class="product-name">Quần Jean Nam ICONDENIM Straight Orgnls Feeling Chill </h3>
+          <div class="price">
+            <span class="current-price">299,000đ</span>
+            <span class="old-price">599,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+
+          <div class="sold-info">
+            <p>Đã bán 656 sản phẩm</p>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/product4.png" alt="Sản phẩm 4">
+        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+        <div class="sale-badge">Sale</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+
+        <div class ="info">
+          <h3 class="product-name">Áo Thun Nam ICONDENIM Form Regular </h3>
+          <div class="price">
+            <span class="current-price">129,000đ</span>
+            <span class="old-price">200,000đ</span>
+            <span class="discount">36%</span>
+          </div>
+
+          <div class="sold-info">
+            <p>Đã bán 1046 sản phẩm</p>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/product5.png" alt="Sản phẩm 5">
+        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+        <div class="sale-badge">Sale</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+
+        <div class ="info">
+          <h3 class="product-name">Quần Tây Nam ICONDENIM Form Basic Slim</h3>
+          <div class="price">
+            <span class="current-price">250,000đ</span>
+            <span class="old-price">500,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+
+          <div class="sold-info">
+            <p>Đã bán 2046 sản phẩm</p>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/product6.png" alt="Sản phẩm 6">
+        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+        <div class="sale-badge">Sale</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+
+        <div class ="info">
+          <h3 class="product-name">Áo Hoodie Nam Spiritual Quotes Form Regular</h3>
+          <div class="price">
+            <span class="current-price">299,000đ</span>
+            <span class="old-price">600,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+
+          <div class="sold-info">
+            <p>Đã bán 2087 sản phẩm</p>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/product7.png" alt="Sản phẩm 7">
+        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+        <div class="sale-badge">Sale</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+
+        <div class ="info">
+          <h3 class="product-name">Áo Thun Nam ICONDENIM Hoạ Tiết MicKy Form Oversize</h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+
+          <div class="sold-info">
+            <p>Đã bán 1234 sản phẩm</p>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/product8.png" alt="Sản phẩm 8">
+        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+        <div class="sale-badge">Sale</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+
+        <div class ="info">
+          <h3 class="product-name">Áo Polo Nam Hoạ Tiết In Logo Mark Form Regular</h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+
+          <div class="sold-info">
+            <p>Đã bán 587 sản phẩm</p>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <div class="promo-banner">
+    <img src="images/banner-sale.png" alt="Hàng mới cũng sale">
+  </div>
+
+  <div class="product-list">
+    <div class="product-card">
+      <div class="product-top">
+        <img src="images/product9.png" alt="Áo thun">
+        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+        <div class="sale-badge">Sale</div>
+        <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+      </div>
+
+      <div class="info">
+        <p class="product-name">Áo Thun Nam ICONDENIM Merge American Football</p>
+        <div class="price">
+          <span class="new-price">314,000đ</span>
+          <span class="old-price">349,000đ</span>
+          <span class="discount">10%</span>
+        </div>
+        <div class="gift-label">🎁 TẶNG STICKER</div>
+      </div>
+    </div>
+
+    <div class="product-card">
+    <div class="product-top">
+      <img src="images/product10.png" alt="Mũ Lưỡi Trai Nam">
+
+      <div class="label">TỰ HÀO ĐẠI LỄ</div>
+      <div class="sale-badge">Sale</div>
+      <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+    </div>
+
+    <div class="info">
+      <p class="product-name">Mũ Lưỡi Trai Nam ICONDENIM AMERICA</p>
+      <div class="price">
+        <span class="new-price">206,000đ</span>
+        <span class="old-price">229,000đ</span>
+        <span class="discount">10%</span>
+      </div>
+      <div class="gift-label">🎁 TẶNG STICKER</div>
+    </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-top">
+        <img src="images/product11.png" alt="Áo Polo Nam">
+        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+        <div class="sale-badge">Sale</div>
+        <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+      </div>
+      <div class="info">
+        <p class="product-name">Áo Polo Nam ICONDENIM Cổ Phối Viền</p>
+        <div class="price">
+          <span class="new-price">214,000đ</span>
+          <span class="old-price">249,000đ</span>
+          <span class="discount">10%</span>
+        </div>
+        <div class="gift-label">🎁 TẶNG STICKER</div>
+      </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-top">
+          <img src="images/product12.png" alt="Quần Short Nam">
+          <div class="label">TỰ HÀO ĐẠI LỄ</div>
+          <div class="sale-badge">Sale</div>
+          <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+        </div>
+        <div class="info">
+          <p class="product-name">Quần Short Nam Kaki ICONDENIM</p>
+          <div class="price">
+            <span class="new-price">314,000đ</span>
+            <span class="old-price">349,000đ</span>
+            <span class="discount">10%</span>
+          </div>
+          <div class="gift-label">🎁 TẶNG STICKER</div>
+        </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-top">
+            <img src="images/02.png" alt="Quần Short Nam">
+            <div class="label">TỰ HÀO ĐẠI LỄ</div>
+            <div class="sale-badge">Sale</div>
+            <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+          </div>
+          <div class="info">
+            <p class="product-name">Quần Short Nam Denim ICONDENIM</p>
+            <div class="price">
+              <span class="new-price">314,000đ</span>
+              <span class="old-price">349,000đ</span>
+              <span class="discount">10%</span>
+            </div>
+            <div class="gift-label">🎁 TẶNG STICKER</div>
+          </div>
+          </div>
+    
+          <div class="product-card">
+            <div class="product-top">
+              <img src="images/03.png" alt="Combo 2 áo thun nam ">
+              <div class="sale-badge">Sale</div>
+              <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+            </div>
+            <div class="info">
+              <p class="product-name">Combo 2 Áo Thun ICONDENIM</p>
+              <div class="price">
+                <span class="new-price">379,000đ</span>
+                <span class="old-price">499,000đ</span>
+                <span class="discount">24%</span>
+              </div>
+              <div class="gift-label">🎁 TẶNG STICKER</div>
+            </div>
+            </div>
+            
+              <div class="product-card">
+              <div class="product-top">
+                <img src="images/04.png" alt="Combo 2 áo thun nam ">
+                <div class="sale-badge">Sale</div>
+                <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+              </div>
+              <div class="info">
+                <p class="product-name">  Áo Sơ Mi Nam Tay Dài ICONDENIM  </p>
+                <div class="price">
+                  <span class="new-price">249,000đ</span>
+                  <span class="old-price">499,000đ</span>
+                  <span class="discount">50%</span>
+                </div>
+                <div class="gift-label">🎁 TẶNG STICKER</div>
+              </div>
+              </div>
+             </div>
+            </section>
+         
+          <div class="promo-banner">
+            <img src="images/banner-1.png" alt="Tủ Đồ Mùa Hè">
+
+          <div class="product-list">
+            <div class="product-card">
+              <div class="product-top">
+                <img src="images/07.png" alt="Áo sơ mi nam">
+                <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                <div class="sale-badge">Sale</div>
+                <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+              </div>
+
+              <div class="info">
+                <p class="product-name">Áo Sơ MI Nam ICONDENIM Kiểu Tay Ngắn</p>
+                <div class="price">
+                  <span class="new-price">314,000đ</span>
+                  <span class="old-price">349,000đ</span>
+                  <span class="discount">10%</span>
+                  <div class="gift-label">🎁 TẶNG STICKER</div>
+                </div>
+              </div>
+            </div>
+
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/08.png" alt="Áo sơ mi nam">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+                <div class="info">
+                  <p class="product-name">Áo Sơ MI Nam Basic Linen CuBan Cộc Tay  </p>
+                  <div class="price">
+                    <span class="new-price">288,000đ</span>
+                    <span class="old-price">320,000đ</span>
+                    <span class="discount">10%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                </div>
+              </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/09.png" alt="Áo thun nam">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+                <div class="info">
+                  <p class="product-name">Áo Thun Nam Hoạ Tiết ICONDENIM  </p>
+                  <div class="price">
+                    <span class="new-price">314,000đ</span>
+                    <span class="old-price">349,000đ</span>
+                    <span class="discount">10%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                </div>
+              </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/10.png" alt="Mũ nam">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+                <div class="info">
+                  <p class="product-name">Mũ Lưỡi Trai Nam Boston ICONDENIM  </p>
+                  <div class="price">
+                    <span class="new-price">206,000đ</span>
+                    <span class="old-price">229,000đ</span>
+                    <span class="discount">10%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                </div>
+              </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/11.png" alt="Áo Khoác nam">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+                <div class="info">
+                  <p class="product-name">Áo Khoác Dù Nam ICONDENIM Năng Động </p>
+                  <div class="price">
+                    <span class="new-price">299,000đ</span>
+                    <span class="old-price">450,000đ</span>
+                    <span class="discount">34%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                </div>
+              </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/12.png" alt="Bộ quần áo nam">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+                <div class="info">
+                  <p class="product-name">Bộ Quần Áo Nam In Hoạ Tiết ICONDENIM ICDN </p>
+                  <div class="price">
+                    <span class="new-price">314,000đ</span>
+                    <span class="old-price">349,000đ</span>
+                    <span class="discount">10%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                </div>
+              </div>
+              </div>
+          </div>
+            </section>
+
+            <!--HÀNG BÁN CHẠY-->
+ 
+            <div class="promo-banner">
+              <img src="images/banner-2.png" alt="HÀNG BÁN CHẠY">
+            <div class="product-list">
+
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/banner1.png" alt="Áo thun nam">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+
+                <div class="info">
+                  <p class="product-name">Áo Thun Nam ICONDENIM Tự Hào Việt Nam</p>
+                  <div class="price">
+                    <span class="new-price">314,000đ</span>
+                    <span class="old-price">349,000đ</span>
+                    <span class="discount">10%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                  </div>
+                </div>
+              </div>
+           
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/banner2.png" alt="Áo polo nam">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+
+                <div class="info">
+                  <p class="product-name">Áo Polo Nam ICONDENIM Pattern Cao Cấp  </p>
+                  <div class="price">
+                    <span class="new-price">199,000đ</span>
+                    <span class="old-price">399,000đ</span>
+                    <span class="discount">50%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/banner3.png" alt="Quần áo bộ nam">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+
+                <div class="info">
+                  <p class="product-name">Bộ Quần Áo Nam Thun-Nỉ Pattern Ngắn</p>
+                  <div class="price">
+                    <span class="new-price">314,000đ</span>
+                    <span class="old-price">349,000đ</span>
+                    <span class="discount">10%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                  </div>
+                </div>
+              </div>
+               
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/banner4.png" alt="Quần Short Nam Kaki">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+                
+                <div class="info">
+                  <p class="product-name">Quần Short Nam Kaki ICONDENIM Thoáng Mát</p>
+                  <div class="price">
+                    <span class="new-price">214,000đ</span>
+                    <span class="old-price">249,000đ</span>
+                    <span class="discount">10%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/banner5.png" alt="Quần Dài Kaki nam">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div> 
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+
+                <div class="info">
+                  <p class="product-name">Quần Dài Nam Kaki ICONDENIM Cao Cấp</p>
+                  <div class="price">
+                    <span class="new-price">206,000đ</span>
+                    <span class="old-price">229,000đ</span>
+                    <span class="discount">10%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-top">
+                  <img src="images/banner6.png" alt="Dép nam">
+                  <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                  <div class="sale-badge">Sale</div>
+                  <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                </div>
+
+                <div class="info">
+                  <p class="product-name">Dép Nam Quai Ngang In Hoạ Tiết INCONDENIM</p>
+                  <div class="price">
+                    <span class="new-price">114,000đ</span>
+                    <span class="old-price">149,000đ</span>
+                    <span class="discount">10%</span>
+                    <div class="gift-label">🎁 TẶNG STICKER</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+         
+           <!--BÊN TRÁI CỦA SHOP TUAN VU-->
+           <!--ÁO THUN-->
+           
+           <div class="product-section">
+            <div class="product-category">
+              <div class="category-header">
+                <h2>ÁO THUN</h2>
+                <a href="#">Xem tất cả »</a>
+              </div>
+              <div class="product-list">
+          
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/category1.jpg" alt="Áo Thun Nam ICONDENIM HEROIC">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+
+                  <div class="info">
+                    <p class="product-name">Áo Thun Nam ICONDENIM HEROIC Thoáng Mát</p>
+                    <div class="price">
+                      <span class="new-price">314,000đ</span>
+                      <span class="old-price">399,000đ</span>
+                      <span class="discount">Hàng Mới</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/category3.jpg" alt="Áo Thun Nam ICONDENIM NEW YORK CITY">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+                  <div class="info">
+                    <p class="product-name">Áo Thun Nam NEW YORK CITY Dày Dặn</p>
+                    <div class="price">
+                      <span class="new-price">299,000đ</span>
+                      <span class="old-price">359,000đ</span>
+                      <span class="discount">Hàng Mới</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/category5.jpg" alt="Áo Thun Nam In Hoạ Tiết Chữ Nghiêng">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+
+                  <div class="info">
+                    <p class="product-name">Áo Thun Nam In Hoạ Tiết Chú Gấu Tinh Nghịch </p>
+                    <div class="price">
+                      <span class="new-price">214,000đ</span>
+                      <span class="old-price">289,000đ</span>
+                      <span class="discount">Thoáng mát</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+             <!--BÊN PHẢI CỦA SHOP TUAN VU-->
+             <!--ÁO POLO-->
+            <div class="product-category">
+
+              <div class="category-header">
+                <h2>ÁO POLO</h2>
+                <a href="#">Xem tất cả »</a>
+              </div>
+
+              <div class="product-list">
+          
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/category2.jpg" alt="Áo Polo Nam ">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+
+                  <div class="info">
+                    <p class="product-name">Áo Polo Nam ICONDENIM In Chữ Viền Cổ</p>
+                    <div class="price">
+                      <span class="new-price">314,000đ</span>
+                      <span class="old-price">399,000đ</span>
+                      <span class="discount">Hot</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/category4.jpg" alt="Áo Polo Nam ">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+
+                  <div class="info">
+                    <p class="product-name">Áo Polo Nam ICONDENIM BaSic Cafe</p>
+                    <div class="price">
+                      <span class="new-price">199,000đ</span>
+                      <span class="old-price">399,000đ</span>
+                      <span class="discount">50%</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/category6.jpg" alt="Áo Polo Nam ">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+                  <div class="info">
+
+                    <p class="product-name">Áo Polo Nam ICONDENIM IN Chữ D</p>
+                    <div class="price">
+                      <span class="new-price">299,000đ</span>
+                      <span class="old-price">595,000đ</span>
+                      <span class="discount">50%</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+           </div>
+
+          <!---ÁO SƠ MI-->
+
+          <div class="product-section">
+            <div class="product-category">
+              <div class="category-header">
+                <h2>ÁO SƠ MI</h2>
+                <a href="#">Xem tất cả »</a>
+              </div>
+
+              <div class="product-list">
+                
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/somi1.png" alt="Áo Sơ Mi Nam ">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+
+                  <div class="info">
+                    <p class="product-name">Áo Sơ Mi Nam ICONDENIM Oxford Đơn Giản</p>
+                    <div class="price">
+                      <span class="new-price">299,000đ</span>
+                      <span class="old-price">450,000đ</span>
+                      <span class="discount">34%</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/somi2,png.jpg" alt="Áo Sơ Mi Nam ">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+
+                  <div class="info">
+                    <p class="product-name">Áo Sơ Mi Nam ICONDENIM MicKy The One</p>
+                    <div class="price">
+                      <span class="new-price">199,000đ</span>
+                      <span class="old-price">320,000đ</span>
+                      <span class="discount">38%</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/somi3.jpg" alt="Áo Sơ Mi Nam ">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+
+                  <div class="info">
+                    <p class="product-name">Áo Sơ Mi Nam ICONDENIM Công Sở </p>
+                    <div class="price">
+                      <span class="new-price">299,000đ</span>
+                      <span class="old-price">450,000đ</span>
+                      <span class="discount">34%</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        
+          <!---ÁO KHOÁC-->
+
+            <div class="product-category">
+              <div class="category-header">
+                <h2>ÁO KHOÁC</h2>
+                <a href="#">Xem tất cả »</a>
+              </div>
+
+              <div class="product-list">
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/aokhoac1.png" alt="Áo Khoác Nam">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+
+                  <div class="info">
+                    <p class="product-name">Áo Khoác Nam ICONDENIM HEROIC</p>
+                    <div class="price">
+                      <span class="new-price">314,000đ</span>
+                      <span class="old-price">399,000đ</span>
+                      <span class="discount">Hàng Mới</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/aokhoac2.jpg" alt="Áo Khoác Nam">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+
+                  <div class="info">
+                    <p class="product-name">Áo Khoác Nam ICONDENIM Khoá Zip </p>
+                    <div class="price">
+                      <span class="new-price">314,000đ</span>
+                      <span class="old-price">399,000đ</span>
+                      <span class="discount">Hàng Mới</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-top">
+                    <img src="images/aokhoac3.jpg" alt="Áo Khoác Nam">
+                    <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                    <div class="sale-badge">Sale</div>
+                    <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                  </div>
+
+                  <div class="info">
+                    <p class="product-name">Áo Gió Nam ICONDENIM Chống Nước </p>
+                    <div class="price">
+                      <span class="new-price">314,000đ</span>
+                      <span class="old-price">399,000đ</span>
+                      <span class="discount">Hàng Mới</span>
+                      <div class="gift-label">🎁 TẶNG STICKER</div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!--SET ĐỒ-->
+
+            <div class="product-section">
+              <div class="product-category">
+                <div class="category-header">
+                  <h2>SET ĐỒ</h2>
+                  <a href="#">Xem tất cả »</a>
+                </div>
+
+                <div class="product-list">
+                  
+                  <div class="product-card">
+                    <div class="product-top">
+                      <img src="images/setdo1.png" alt="Set Đồ Nam ">
+                      <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                      <div class="sale-badge">Hot</div>
+                      <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                    </div>
+
+                    <div class="info">
+                      <p class="product-name">Bộ Quần Áo Nam AMERICA Trẻ Trung  </p>
+                      <div class="price">
+                        <span class="new-price">299,000đ</span>
+                        <span class="old-price"></span>
+                        <span class="discount">Hot</span>
+                        <div class="gift-label">🎁 TẶNG STICKER</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-card">
+                    <div class="product-top">
+                      <img src="images/setdo2.png" alt="Set Đồ Nam ">
+                      <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                      <div class="sale-badge">Hot</div>
+                      <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                    </div>
+
+                    <div class="info">
+                      <p class="product-name">Set Đồ Nam ICONDENIM Tiện Lợi , Cao Cấp   </p>
+                      <div class="price">
+                        <span class="new-price">249,000đ</span>
+                        <span class="old-price"></span>
+                        <span class="discount">Hot</span>
+                        <div class="gift-label">🎁 TẶNG STICKER</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-card">
+                    <div class="product-top">
+                      <img src="images/setdo3.png" alt="Set Đồ Nam ">
+                      <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                      <div class="sale-badge">Hot</div>
+                      <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                    </div>
+
+                    <div class="info">
+                      <p class="product-name">Set Đồ Nam ICONDENIM Cotton Đơn Giản   </p>
+                      <div class="price">
+                        <span class="new-price">199,000đ</span>
+                        <span class="old-price"></span>
+                        <span class="discount">Hot</span>
+                        <div class="gift-label">🎁 TẶNG STICKER</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-card">
+                    <div class="product-top">
+                      <img src="images/setdo4.png" alt="Set Đồ Nam ">
+                      <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                      <div class="sale-badge">Hot</div>
+                      <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                    </div>
+
+                    <div class="info">
+                      <p class="product-name">Bộ Nỉ Nam ICONDENIM Cao Cấp New York City </p>
+                      <div class="price">
+                        <span class="new-price">349,000đ</span>
+                        <span class="old-price"></span>
+                        <span class="discount">Hot</span>
+                        <div class="gift-label">🎁 TẶNG STICKER</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--QUẦN SHORT-->
+
+              <div class="product-category">
+                <div class="category-header">
+                  <h2>QUẦN SHORT</h2>
+                  <a href="#">Xem tất cả »</a>
+                </div>
+                <div class="product-list">
+                  <div class="product-card">
+                    <div class="product-top">
+                      <img src="images/short1.png" alt="Quần Short Nam">
+                      <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                      <div class="sale-badge">Hàng Mới</div>
+                      <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                    </div>
+
+                    <div class="info">
+                      <p class="product-name">Quần Short Nam ICONDENIM Đi Biển</p>
+                      <div class="price">
+                        <span class="new-price">99,000đ</span>
+                        <span class="old-price"></span>
+                        <span class="discount">Hàng Mới</span>
+                        <div class="gift-label">🎁 TẶNG STICKER</div>
+                      </div>
+                    </div>
+                  </div>
+
+                      <div class="product-card">
+                        <div class="product-top">
+                          <img src="images/short2.png" alt="Quần Short Nam">
+                          <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                          <div class="sale-badge">Hàng Mới</div>
+                          <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                        </div>
+
+                        <div class="info">
+                          <p class="product-name">Quần Short Nam Chân Cua VCV Cao Cấp </p>
+                          <div class="price">
+                            <span class="new-price">199,000đ</span>
+                            <span class="old-price"></span>
+                            <span class="discount">Hàng Mới</span>
+                            <div class="gift-label">🎁 TẶNG STICKER</div>
+                          </div>
+                        </div>
+                      </div>
+
+                          <div class="product-card">
+                            <div class="product-top">
+                              <img src="images/short3.png" alt="Quần Short Nam">
+                              <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                              <div class="sale-badge">Hàng Mới</div>
+                              <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                            </div>
+
+                            <div class="info">
+                              <p class="product-name">Quần Short Dù Nam ICONDENIM Thêu Chữ   </p>
+                              <div class="price">
+                                <span class="new-price">129,000đ</span>
+                                <span class="old-price"></span>
+                                <span class="discount">Hàng Mới</span>
+                                <div class="gift-label">🎁 TẶNG STICKER</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="product-card">
+                            <div class="product-top">
+                              <img src="images/short4.png" alt="Quần Short Nam">
+                              <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                              <div class="sale-badge">Hàng Mới</div>
+                              <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                            </div>
+
+                            <div class="info">
+                              <p class="product-name">Quần Thun Nam ICONDENIM Thể Thao </p>
+                              <div class="price">
+                                <span class="new-price">149,000đ</span>
+                                <span class="old-price"></span>
+                                <span class="discount">Hàng Mới</span>
+                                <div class="gift-label">🎁 TẶNG STICKER</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        </div>
+                        
+                       <!--QUẦN JEAN-->
+
+                        <div class="product-section">
+                       <div class="product-category">
+                        <div class="category-header">
+                          <h2>QUẦN JEAN</h2>
+                          <a href="#">Xem tất cả »</a>
+                        </div>
+
+                        <div class="product-list">
+
+                          <div class="product-card">
+                            <div class="product-top">
+                              <img src="images/jean1.png" alt="Quần Jean Nam">
+                              <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                              <div class="sale-badge">Siêu Thoáng</div>
+                              <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                            </div>
+
+                            <div class="info">
+                              <p class="product-name">Quần Jean Nam ICONDENIM Ống Xuông</p>
+                              <div class="price">
+                                <span class="new-price">499,000đ</span>
+                                <span class="old-price"></span>
+                                <span class="discount">Hàng Mới</span>
+                                <div class="gift-label">🎁 TẶNG STICKER</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="product-card">
+                          <div class="product-top">
+                            <img src="images/jean2.png" alt="Quần Jean Nam">
+                            <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                            <div class="sale-badge">Hàng Mới</div>
+                            <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                          </div>
+
+                          <div class="info">
+                            <p class="product-name">Quần Jeans ICONDENIM Dark Blue Form Slim</p>
+                            <div class="price">
+                              <span class="new-price">514,000đ</span>
+                              <span class="old-price"></span>
+                              <span class="discount">Hàng Mới</span>
+                              <div class="gift-label">🎁 TẶNG STICKER</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-top">
+                              <img src="images/jean3.png" alt="Quần JEAN Nam">
+                              <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                              <div class="sale-badge">Siêu Nhẹ</div>
+                              <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                            </div>
+
+                            <div class="info">
+                              <p class="product-name">Quần Jeans ICONDENIM Indigo Viền Chỉ Vàng</p>
+                              <div class="price">
+                                <span class="new-price">550,000đ</span>
+                                <span class="old-price"></span>
+                                <span class="discount">Hàng Mới</span>
+                                <div class="gift-label">🎁 TẶNG STICKER</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="product-card">
+                            <div class="product-top">
+                              <img src="images/jean4.png" alt="Quần JEAN Nam">
+                              <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                              <div class="sale-badge">Hàng Mới</div>
+                              <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                            </div>
+
+                            <div class="info">
+                              <p class="product-name">Quần Jeans Nam Xám Đen Ống Rộng</p>
+                              <div class="price">
+                                <span class="new-price">439,000đ</span>
+                                <span class="old-price"></span>
+                                <span class="discount">Hàng Mới</span>
+                                <div class="gift-label">🎁 TẶNG STICKER</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                       
+                      <!--QUẦN TÂY-->
+
+                       <div class="product-category">
+                        <div class="category-header">
+                          <h2>QUẦN TÂY</h2>
+                          <a href="#">Xem tất cả »</a>
+                        </div>
+
+                        <div class="product-list">
+                          <div class="product-card">
+                            <div class="product-top">
+                              <img src="images/tay1.png" alt="Quần Tây Nam">
+                              <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                              <div class="sale-badge">Hàng Mới</div>
+                              <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                            </div>
+
+                            <div class="info">
+                              <p class="product-name">Quần Tây Nam ICONDENIM Simple </p>
+                              <div class="price">
+                                <span class="new-price">399,000đ</span>
+                                <span class="old-price"></span>
+                                <span class="discount">Hàng Mới</span>
+                                <div class="gift-label">🎁 TẶNG STICKER</div>
+                              </div>
+                           </div>
+                         </div>
+
+                         <div class="product-card">
+                          <div class="product-top">
+                            <img src="images/tay2.png" alt="Quần Tây Nam">
+                            <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                            <div class="sale-badge">Hàng Mới</div>
+                            <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                          </div>
+
+                          <div class="info">
+                            <p class="product-name">Quần Tây ICONDENIM Phối Thun 2 Bên Hông</p>
+                            <div class="price">
+                              <span class="new-price">419,000đ</span>
+                              <span class="old-price"></span>
+                              <span class="discount">Hàng Mới</span>
+                              <div class="gift-label">🎁 TẶNG STICKER</div>
+                            </div>
+                         </div>
+                       </div>
+
+                       <div class="product-card">
+                        <div class="product-top">
+                          <img src="images/tay3.png" alt="Quần Tây Nam">
+                          <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                          <div class="sale-badge">Hàng Mới</div>
+                          <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                        </div>
+
+                        <div class="info">
+                          <p class="product-name">Quần Tây Nam Ống Suông Sidetab Form Straight </p>
+                          <div class="price">
+                            <span class="new-price">519,000đ</span>
+                            <span class="old-price"></span>
+                            <span class="discount">Hàng Mới</span>
+                            <div class="gift-label">🎁 TẶNG STICKER</div>
+                          </div>
+                       </div>
+                     </div>
+
+                     <div class="product-card">
+                      <div class="product-top">
+                        <img src="images/tay4.png" alt="Quần Tây Nam">
+                        <div class="label">TỰ HÀO ĐẠI LỄ</div>
+                        <div class="sale-badge">Hàng Mới</div>
+                        <div class="cart-icon"><i class="fa fa-shopping-cart"></i></div>
+                      </div>
+
+                      <div class="info">
+                        <p class="product-name">Quần Tây Nam Ống Suông Sidetab Form Straight </p>
+                        <div class="price">
+                          <span class="new-price">420,000đ</span>
+                          <span class="old-price"></span>
+                          <span class="discount">Hàng Mới</span>
+                          <div class="gift-label">🎁 TẶNG STICKER</div>
+                        </div>
+                     </div>
+                   </div>
+                  </div>
+                   </div>
+                   </div>
+                       
+                   <!-- KHỐI ĐĂNG KÍ NHẬN TIN-->
+
+                       <footer class="footer">
+                        <div class="newsletter">
+                          <h3>ĐĂNG KÍ NHẬN TIN</h3>
+                          <form>
+                            <input type="email" placeholder="Email" />
+                            <button type="submit">📧 ĐĂNG KÝ</button>
+                          </form>
+                        </div>
+
+                      <!--4 cột-->
+
+                        <div class="footer-content">
+                          
+                          <div class="footer-column">
+                            <h4>GIỚI THIỆU</h4>
+                            <p>TUAN VU STORE - Chuỗi Phân Phối Thời Trang Nam Chuẩn Hiệu</p>
+                            <p>📱 0987412576</p>
+                            <p>✉️ tuanvu111206@gmail.com</p>
+                            <p>🕘 Giờ mở cửa: 08:30 - 22:00</p>
+                            <p>🎧 Nhân viên tư vấn đến 24:00 (Mỗi ngày)</p>
+                            <div class="certifications">
+                            <img src="images/thongbao.png" alt="Bộ Công Thương">
+                            <img src="images/dmca.png" alt="DMCA" />
+                           </div>
+                          </div>
+                      
+                          <div class="footer-column">
+                            <h4>CHÍNH SÁCH</h4>
+                            <ul>
+                              <li>Quy khách mua hàng không đúng hàng , đúng size hoàn tiền 100%</li>
+                            </ul>
+                          </div>
+                      
+                          <div class="footer-column">
+                            <h4>ĐỊA CHỈ CỬA HÀNG </h4>
+                            <ul>
+                              <li><strong>HƯNG YÊN :</strong> Đỗ Hạ - Quang Vinh - Ân Thi - Hưng Yên </li>
+                          </div>
+                          
+                          <div class="footer-column">
+                            <h4>PHƯƠNG THỨC THANH TOÁN , MUA HÀNG</h4>
+                            <div class="social-icons">
+                              <img src="images/zalo.png" alt="Zalo" />
+                              <img src="images/insta.png" alt="Instagram" />
+                              <img src="images/facebook.png" alt="Facebook" />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="footer-bottom">
+                          <p>BẢN QUYỀN THUỘC VỀ TUAN VU STORE</p>
+                        </div>
+                      </footer> 
+  </body>
+</html>

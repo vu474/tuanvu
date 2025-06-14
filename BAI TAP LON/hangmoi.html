@@ -1,0 +1,285 @@
+<!-- hangmoi.html -->
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hàng Mới - Tuan Vu Store</title>
+    <link rel="stylesheet" href="hangmoi.css" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <!--Tiêu Đề Trang Web-->
+
+    <header class="main-header">
+      <a href="index.html">← </a>
+      <div class="logo">
+        <img src="images/01.png" alt="Tuan Vu Store" />
+      </div>
+      
+      <!--Thanh tìm kiếm-->
+      <div class="search-bar">
+        <input type="text" placeholder="Bạn đang tìm gì..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="icons">
+        <a href="cuahang.html"><i class="fas fa-map-marker-alt"></i> Cửa hàng</a>
+        <a href="#" id="loginBtn"><i class="fas fa-user"></i> Đăng nhập</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a>
+      </div>
+    </header>
+
+    <!--ĐĂNG NHẬP-->
+
+    <div id="loginPopup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+        <p>Nhập email và mật khẩu của bạn:</p>
+        <input type="text" placeholder="Nhập email hoặc số điện thoại">
+        <input type="password" placeholder="Mật khẩu">
+        <button class="login-btn">ĐĂNG NHẬP</button>
+        <div class="popup-footer">
+          <p>Khách hàng mới? <a href="#">Tạo tài koản</a></p>
+        </div>
+      </div>
+    </div>
+
+     <!-- ĐĂNG KÝ -->
+     
+  <div id="registerPopup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+    <p>Điền thông tin để tạo tài khoản mới:</p>
+    <input type="text" placeholder="Họ và tên" />
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Mật khẩu" />
+    <input type="password" placeholder="Xác nhận mật khẩu" />
+    <button class="register-btn">ĐĂNG KÝ</button>
+    <div class="popup-footer">
+      <p>Đã có tài khoản? <a href="#" id="showLogin">Đăng nhập</a></p>
+    </div>
+  </div>
+ </div>
+
+    <!-- Menu -->
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="hangmoi.html">HÀNG MỚI</a></li>
+        <li><a href="aonam.html">ÁO NAM</a></li>
+        <li><a href="quannam.html">QUẦN NAM</a></li>
+      </ul>
+    </nav>
+
+    <!--Sản Phẩm-->
+    
+    <section class="promo-banner">
+      <img src ="images/banner-3.png" alt="Tự Hào Đại Lễ">
+    </section>
+    <section class="product-list">
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/hangmoi1.png" alt="Sản phẩm 1">
+        <div class="label">Hàng Mới</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+        <div class ="info">
+          <h3 class="product-name">Áo Sơ Mi Bóng Chày Nam Disney Stitch Striker Edition </h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/hangmoi2.png" alt="Sản phẩm 2">
+        <div class="label">Hàng Mới</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+        <div class ="info">
+          <h3 class="product-name">Áo Thun Nam Hoạ Tiết Orgnls G-Bear Form Regular</h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/hangmoi3.png" alt="Sản phẩm 3">
+        <div class="label">Hàng Mới</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+        <div class ="info">
+          <h3 class="product-name">Quần Kaki Nam Garment Dye With Leather Detail</h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/hangmoi4.png" alt="Sản phẩm 4">
+        <div class="label">Hàng Mới</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+        <div class ="info">
+          <h3 class="product-name">Set Đồ Thun Nam ICDN PanelPlay Orgnls Cao Cấp  </h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/hangmoi5.png" alt="Sản phẩm 5">
+        <div class="label">Hàng Mới</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+        <div class ="info">
+          <h3 class="product-name">Áo Thun Nam Phối Cổ Túi Đắp Orgnls Light Blue Wash  </h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/hangmoi6.png" alt="Sản phẩm 6">
+        <div class="label">Hàng Mới</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+        <div class ="info">
+          <h3 class="product-name">Quần Smart Jean Nam Siêu Co Dãn Sky Blue Form Smart Fit </h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/hangmoi7.png" alt="Sản phẩm 7">
+        <div class="label">Hàng Mới</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+        <div class ="info">
+          <h3 class="product-name">Áo Sơ Mi Poly Spandex Nam Tay Dài Trơn Phối Subtle Stripe  </h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/hangmoi9.png" alt="Sản phẩm 9">
+        <div class="label">Hàng Mới</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+        <div class ="info">
+          <h3 class="product-name">Áo Sơ Mi Denim Nam Túi Ngực Patterned Heat-Embossed  </h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class ="product-card">
+        <div class="product-top">
+        <img src="images/hangmoi8.png" alt="Sản phẩm 8">
+        <div class="label">Hàng Mới</div>
+        <div class ="cart-icon">
+          <i class="fas fa-shopping-bag"></i>
+       </div>
+        </div>
+        <div class ="info">
+          <h3 class="product-name">Quần Short Denim Nam Striped Utility Form Regular  </h3>
+          <div class="price">
+            <span class="current-price">149,000đ</span>
+            <span class="old-price">299,000đ</span>
+            <span class="discount">50%</span>
+          </div>
+            <div class="product-bar">
+              <div class="progress" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
